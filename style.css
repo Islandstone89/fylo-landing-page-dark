@@ -1,0 +1,187 @@
+
+/* CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Avoid orphans on paragraphs */
+p {
+    text-wrap: pretty;
+}
+
+/* Make links inherit text color */
+a {
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts and text color for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(assets/fonts/Raleway-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(assets/fonts/Raleway-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(assets/fonts/OpenSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(assets/fonts/OpenSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    /* COLORS */
+
+    /* Primary */
+    --clr-primary-100: hsl(219, 30%, 18%);
+    --clr-primary-200: hsl(217, 28%, 15%);
+    --clr-primary-300: hsl(218, 28%, 13%);
+    --clr-primary-400: hsl(216, 53%, 9%);
+
+    /* Accent */
+    --clr-accent-100: hsl(176, 68%, 64%);
+    --clr-accent-200: hsl(0, 100%, 63%);
+    --clr-accent-300: hsl(198, 60%, 50%);
+
+    /* Neutral */
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* TYPOGRAPHY */
+    --fs-body: .875rem;
+    --ff-raleway: 'Raleway', sans-serif;
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/* UTILITIES */
+
+.flow > * + * {
+    --flow-space: 2em;
+    margin-top: var(--flow-space, 1em);
+}
+
+/* COMPONENTS */
+
+a:not(.big-benefit__link) {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    padding: .5em 2em;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--clr-accent-100), var(--clr-accent-300));
+    text-transform: capitalize;
+}
+
+/* GENERAL STYLING */
+
+body {
+    font-family: var(--ff-open-sans);
+    color: var(--clr-white);
+    background-color: var(--clr-primary-300);
+    padding: 1rem;
+   /*  background-image: url('images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat; */
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid red;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 2rem;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    background-color: var(--clr-primary-100);
+}

@@ -17,7 +17,7 @@
       <img src="images/logo.svg" alt="Home">
     </div><!-- end logo-wrapper -->
 
-    <nav class="navbar" aria-label="primary">
+    <nav class="navbar">
       <ul class="navbar__list">
 
         <li class="navbar__list__item">
@@ -37,32 +37,36 @@
   <main class="main">
     <div class="intro">
       <img src="images/illustration-intro.png" alt="">
-      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <h1 class="main-heading">All your files in one secure location, accessible anywhere.</h1>
       <p>Fylo stores all your most important files in one secure location. Access them wherever 
         you need, share and collaborate with friends family, and co-workers.</p>
         <div class="btn-wrapper">
-          <a href="#">Get Started</a>
+          <a href="#" class="btn">Get started</a>
         </div><!-- end btn-wrapper -->
     </div><!-- end intro -->
 
     <div class="benefits">
       <div class="benefit">
-        <h2>Access your files, anywhere</h2>
+        <img src="images/icon-access-anywhere.svg" alt="">
+        <h2 class="benefit__heading">Access your files, anywhere</h2>
         <p> The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
       </div><!-- end benefit -->
 
       <div class="benefit">
-        <h2>Security you can trust</h2>
+        <img src="images/icon-security.svg" alt="">
+        <h2 class="benefit__heading">Security you can trust</h2>
         <p>  2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
       </div><!-- end benefit -->
 
       <div class="benefit">
-        <h2>Real-time collaboration</h2>
+        <img src="images/icon-collaboration.svg" alt="">
+        <h2 class="benefit__heading">Real-time collaboration</h2>
         <p> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       </div><!-- end benefit -->
 
       <div class="benefit">
-        <h2>Store any type of file</h2>
+        <img src="images/icon-any-file.svg" alt="">
+        <h2 class="benefit__heading">Store any type of file</h2>
         <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
       </div><!-- end benefit -->
     </div><!-- end benefits -->
@@ -76,7 +80,7 @@
         <h2>Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-        <a href="#">See how Fylo works</a>
+        <a href="#" class="big-benefit__link">See how Fylo works <img src="images/icon-arrow.svg" alt=""></a>
       </div><!-- end big-benefit__text -->
     </div><!-- end big-benefit -->
 
@@ -124,7 +128,7 @@
       <form class="cta__form">
         <label for="" class="visually-hidden">Please enter your email address</label>
         <input type="email" name="email" id="email">
-        <button class="cta__form__btn">Get Started For Free</button>
+        <button class="btn cta__form__btn">Get started for free</button>
       </form><!-- end cta__form -->
     </div><!-- end cta -->
 
@@ -136,12 +140,20 @@
     </div><!--end footer__logo-wrapper -->
 
     <div class="location">
+      <img src="images/icon-location.svg" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div><!-- end location -->
 
     <div class="contact">
-      <p>+1-543-123-4567</p>
-      <p>example@fylo.com</p>
+      <div class="phone">
+        <img src="images/icon-phone.svg" alt="">
+        <p>+1-543-123-4567</p>
+      </div><!-- end phone -->
+
+      <div class="email">
+        <img src="images/icon-email.svg" alt="">
+        <p>example@fylo.com</p>
+     </div><!-- end email -->
     </div><!-- end contact -->
 
     <div class="sitemap-first">
@@ -162,6 +174,74 @@
     </div><!-- end sitemap-second -->
 
     <div class="social-media">
+      <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="-143 145 512 512" xml:space="preserve">
+<g>
+	<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
+		c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4
+		c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8
+		c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4
+		c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"/>
+	<path d="M146.8,313.7c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3
+		c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H51.2v38.3h26.5v133h49.6v-133h39.3l2.9-38.3h-42.2v-29.9C127.3,317.4,136.5,313.7,146.8,313.7z"
+		/>
+</g>
+</svg>
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<path fill="#808184" d="M16-0.035C7.159-0.035-0.035,7.159-0.035,16S7.159,32.035,16,32.035S32.035,24.841,32.035,16
+		S24.841-0.035,16-0.035z M16,30.965C7.748,30.965,1.035,24.252,1.035,16S7.748,1.035,16,1.035S30.965,7.748,30.965,16
+		S24.252,30.965,16,30.965z"/>
+	<path fill="#808184" d="M24.797,11.082c-0.027,0.012-0.055,0.024-0.083,0.036c0.131-0.228,0.238-0.471,0.319-0.725
+		c0.063-0.198-0.002-0.414-0.165-0.543c-0.163-0.129-0.388-0.145-0.566-0.039c-0.522,0.31-1.083,0.538-1.673,0.681
+		c-0.693-0.632-1.608-0.99-2.553-0.99c-2.086,0-3.783,1.696-3.783,3.781c0,0.066,0.001,0.131,0.005,0.197
+		c-2.259-0.271-4.346-1.415-5.797-3.195c-0.104-0.127-0.262-0.201-0.427-0.183c-0.164,0.013-0.31,0.105-0.393,0.247
+		c-0.334,0.574-0.512,1.232-0.512,1.902c0,0.667,0.15,1.29,0.432,1.832c-0.147-0.03-0.295,0.025-0.412,0.116
+		C9.071,14.292,9,14.458,9,14.611c0,1.157,0.547,2.218,1.422,2.921c-0.007,0.007-0.014,0.014-0.021,0.022
+		c-0.117,0.132-0.155,0.316-0.102,0.484c0.356,1.11,1.194,1.968,2.242,2.373c-1.063,0.542-2.3,0.752-3.487,0.616
+		C8.83,21,8.605,21.137,8.526,21.356c-0.078,0.219,0.005,0.463,0.202,0.589c1.587,1.017,3.42,1.554,5.302,1.554
+		c6.159,0,9.839-5.002,9.839-9.839c0-0.06,0-0.12-0.001-0.18c0.601-0.466,1.12-1.025,1.547-1.664c0.124-0.185,0.11-0.429-0.033-0.6
+		C25.239,11.046,25.001,10.993,24.797,11.082z M23.068,12.829c-0.138,0.099-0.216,0.261-0.208,0.431
+		c0.006,0.133,0.009,0.267,0.009,0.4c0,4.345-3.306,8.839-8.839,8.839c-1.038,0-2.059-0.182-3.023-0.534
+		c1.145-0.198,2.218-0.674,3.152-1.406c0.167-0.13,0.233-0.352,0.166-0.552c-0.067-0.201-0.253-0.337-0.465-0.341
+		c-0.928-0.017-1.766-0.488-2.266-1.227c0.246-0.015,0.482-0.056,0.742-0.126c0.224-0.061,0.376-0.268,0.368-0.5
+		c-0.008-0.231-0.174-0.427-0.401-0.473c-1.079-0.217-1.94-1.047-2.212-2.076c0.045,0.016,0.086,0.03,0.125,0.044
+		c0.251,0.09,0.45,0.162,0.828,0.173c0.231,0.001,0.423-0.135,0.492-0.348s-0.013-0.444-0.198-0.568
+		c-0.741-0.495-1.166-1.339-1.166-2.316c0-0.247,0.033-0.491,0.096-0.726c1.729,1.795,4.088,2.879,6.588,3.005
+		c0.155,0.017,0.308-0.059,0.408-0.179c0.101-0.12,0.139-0.281,0.104-0.434c-0.048-0.207-0.072-0.42-0.072-0.635
+		c0-1.534,1.249-2.781,2.783-2.781c0.767,0,1.507,0.32,2.031,0.879c0.118,0.125,0.292,0.181,0.462,0.148
+		c0.221-0.044,0.439-0.098,0.654-0.162c-0.114,0.096-0.237,0.184-0.366,0.262c-0.203,0.121-0.292,0.367-0.216,0.59
+		c0.077,0.223,0.303,0.363,0.532,0.335c0.101-0.012,0.202-0.026,0.302-0.042C23.345,12.622,23.209,12.728,23.068,12.829z"/>
+</g>
+</svg>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 314.652 314.652" xml:space="preserve">
+<g>
+	<path d="M157.326,0C70.576,0,0,70.576,0,157.326s70.576,157.326,157.326,157.326s157.326-70.576,157.326-157.326
+		S244.076,0,157.326,0z M157.326,296.652C80.502,296.652,18,234.15,18,157.326S80.502,18,157.326,18s139.326,62.502,139.326,139.326
+		S234.15,296.652,157.326,296.652z"/>
+	<path d="M214.618,80.326H100.034c-10.477,0-19,8.523-19,19v116c0,10.477,8.523,19,19,19h114.584c10.477,0,19-8.523,19-19v-116
+		C233.618,88.85,225.095,80.326,214.618,80.326z M215.618,215.326c0,0.552-0.448,1-1,1H100.034c-0.552,0-1-0.448-1-1v-116
+		c0-0.552,0.448-1,1-1h114.584c0.552,0,1,0.448,1,1V215.326z"/>
+	<rect x="183.583" y="111.812" width="20.615" height="18.911"/>
+	<circle cx="157.326" cy="164.946" r="20.324"/>
+	<path d="M189.745,164.856c0,17.904-14.514,32.418-32.418,32.418s-32.418-14.514-32.418-32.418l0.044-14.445h-14.497v53.761h93.743
+		v-53.761H189.82L189.745,164.856z"/>
+</g>
+</svg>
 
     </div><!-- end social-media -->
   </footer><!-- end footer -->
