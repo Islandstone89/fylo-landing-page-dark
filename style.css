@@ -163,7 +163,6 @@ a {
 
     &:is(:hover, :active) {
       background: var(--clr-accent-100);
-      transition: ease-in-out .2s;
     }
 }
 
@@ -173,7 +172,6 @@ body {
     font-family: var(--ff-open-sans);
     color: var(--clr-white);
     background-color: var(--clr-primary-300);
-    padding: 1rem;
    /*  background-image: url('images/bg-curvy-desktop.svg');
     background-repeat: no-repeat; */
 }
@@ -222,9 +220,15 @@ body {
 
 .benefits {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   padding-inline: 5rem;
+}
+
+@media (min-width: 50rem) {
+  .benefits {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .benefit {
@@ -237,18 +241,26 @@ body {
 
 .big-benefit {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   align-items: center;
 }
 
+@media (min-width: 50rem) {
+  .big-benefit {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .big-benefit__link {
-  display: flex;
-  gap: .5em;
+  /* display: flex;
+  gap: .5em; */
   align-items: center;
   text-decoration: underline;
   text-underline-offset: .5em;
   color: var(--clr-accent-100);
+  margin-right: 2rem;
+  position: relative;
 
   &:hover {
     color: var(--clr-white);
@@ -257,18 +269,48 @@ body {
   .big-benefit__link__icon__use:hover {
     fill: currentColor;
   }
+  
+}
+
+.big-benefit__link::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: -5px;
 }
 
 /* TESTIMONAILS */
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+@media (min-width: 50rem) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .testimonial {
   padding: 3rem 2rem;
+}
+
+.testimonial:first-of-type {
+  position: relative;
+}
+
+.testimonial:first-of-type::before {
+  display: block;
+  content: url('images/bg-quotes.png');
+  position: absolute;
+  top: -12%;
+  left: -5%;
+  z-index: -1;
 }
 
 .figure {
@@ -296,6 +338,7 @@ body {
   background-color: var(--clr-primary-200);
   border-radius: 10px;
   padding: 2rem;
+  transform: translateY(50%);
 
   .cta__form {
     display: grid;
@@ -310,6 +353,10 @@ body {
 }
 
 /* FOOTER */
+
+.footer {
+  background-color: var(--clr-primary-400);
+}
 
 .footer-container {
     display: flex;
